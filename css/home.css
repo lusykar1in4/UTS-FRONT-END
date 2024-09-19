@@ -101,6 +101,29 @@ img {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 1rem;
+}
+
+.section__title {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.main {
+  overflow: hidden; /* For animation ScrollReveal */
+}
 
 /*=============== HEADER & NAV ===============*/
 .header {
@@ -197,9 +220,11 @@ img {
   left: 0;
   width: 100%;
   height: 800px;
-  background: linear-gradient(180deg,
-  hsla(0, 0%, 0%, 0) 58%,
-  hsl(0, 0%, 0%) 78%);
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 58%,
+    hsl(0, 0%, 0%) 78%
+  );
 }
 
 .home-container {
@@ -214,7 +239,7 @@ img {
 
 .home-subtitle {
   font-size: var(--h3-font-size);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .home-title {
@@ -237,8 +262,8 @@ img {
   overflow: hidden;
 }
 
-.home-card-img{
-  transition: transform .4s;
+.home-card-img {
+  transition: transform 0.4s;
 }
 
 .home-card-shadow {
@@ -247,9 +272,11 @@ img {
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(180deg,
-  hsla(0, 0%, 0%, 0) 50%,
-  hsl(0, 0%, 0%) 125%);
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 50%,
+    hsl(0, 0%, 0%) 125%
+  );
 }
 
 .home-card-title {

@@ -68,16 +68,16 @@ const scrollActive = () => {
 window.addEventListener("scroll", scrollActive);
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-  origin: 'top',
-  distance: '60px',
-  duration: 3000,
-  delay: 400,
-  // reset: true // Animations repeat
-})
+// const sr = ScrollReveal({
+//   origin: 'top',
+//   distance: '60px',
+//   duration: 3000,
+//   delay: 400,
+//   // reset: true // Animations repeat
+// })
 
-sr.reveal(`.home-data .explore-data, .explore-user, .footer-container`)
-sr.reveal(`.home-card`, {delay: 600, distance: '100px', interval: 100})
-sr.reveal(`.about-data`, `.join-image`, {origin: 'right'})
-sr.reveal(`.about-image`, `.join-data`, {origin: 'left'})
-sr.reveal(`.popular-card`, {interval: 200})
+// sr.reveal(`.home-data .explore-data, .explore-user, .footer-container`)
+// sr.reveal(`.home-card`, {delay: 600, distance: '100px', interval: 100})
+// sr.reveal(`.about-data`, `.join-image`, {origin: 'right'})
+// sr.reveal(`.about-image`, `.join-data`, {origin: 'left'})
+// sr.reveal(`.popular-card`, {interval: 200})

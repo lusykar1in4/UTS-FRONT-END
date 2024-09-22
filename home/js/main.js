@@ -37,7 +37,13 @@ const blurHeader = () => {
 window.addEventListener("scroll", blurHeader);
 
 /*=============== SHOW SCROLL UP ===============*/
-
+const scrollUp = () => {
+  const scrollUp = document.getElementById('scroll-up')
+  //When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
+  this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                                            : scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll("section[id]");
 
@@ -62,3 +68,16 @@ const scrollActive = () => {
 window.addEventListener("scroll", scrollActive);
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+// const sr = ScrollReveal({
+//   origin: 'top',
+//   distance: '60px',
+//   duration: 3000,
+//   delay: 400,
+//   // reset: true // Animations repeat
+// })
+
+// sr.reveal(`.home-data .explore-data, .explore-user, .footer-container`)
+// sr.reveal(`.home-card`, {delay: 600, distance: '100px', interval: 100})
+// sr.reveal(`.about-data`, `.join-image`, {origin: 'right'})
+// sr.reveal(`.about-image`, `.join-data`, {origin: 'left'})
+// sr.reveal(`.popular-card`, {interval: 200})

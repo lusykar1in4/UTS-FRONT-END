@@ -96,8 +96,10 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius:20px;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -307,6 +309,14 @@ img {
   transform: translateX(0.25rem);
 }
 
+.button {
+  border-radius: 18px;
+  height: auto;
+  width: 100%;
+  aspect-ratio: 1/1;
+  column-gap: 1.5rem;
+}
+
 /*=============== POPULAR ===============*/
 .popular__container {
   display: grid;
@@ -496,7 +506,7 @@ img {
 }
 
 .footer-data {
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(5, max-content);
   gap: 2.5rem 3.5rem;
 }
 
@@ -594,9 +604,15 @@ img {
   }
 }
 
+.popular__container {
+  grid-template-columns: repeat(5, 240px);
+  column-gap: 3rem;
+}
+
 @media screen and (min-width: 768px) {
   .popular__container {
-    grid-template-columns: repeat(2, 240px);
+    grid-template-columns: repeat(5, 240px);
+    column-gap: 3rem;
   }
 
   .explore__img {
@@ -673,11 +689,7 @@ img {
   .home-description {
     margin-bottom: 2.5rem;
   }
-
-  .button {
-    column-gap: 1.5rem;
-  }
-
+  
   .popular__container {
     grid-template-columns: repeat(5, 300px);
     column-gap: 3rem;

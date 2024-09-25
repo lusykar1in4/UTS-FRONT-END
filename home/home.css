@@ -268,6 +268,7 @@ img {
 
 .home-data {
   text-align: center;
+  margin-top: 30px;
 }
 
 .home-subtitle {
@@ -281,7 +282,7 @@ img {
 }
 
 .home-description {
-  margin-bottom: 2rem;
+  margin-bottom: 329px;
   color: var(--title-color);
 }
 
@@ -580,9 +581,13 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 340px) {
+@media screen and (min-width: 340px) {
   .container {
     margin-inline: 1rem;
+  }
+
+  .explore__image {
+    width: 100%;
   }
 
   .footer-data {
@@ -597,6 +602,10 @@ img {
   .explore__content {
     grid-template-columns: 380px;
     justify-content: center;
+  }
+
+  .explore__image {
+    width: 100%;
   }
 
   .footer-data {
@@ -687,7 +696,7 @@ img {
     font-size: var(--h2-font-size);
   }
   .home-description {
-    margin-bottom: 2.5rem;
+    margin-bottom: 52%;
   }
   
   .popular__container {

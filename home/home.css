@@ -637,7 +637,7 @@ img {
     width: 100vw;
   }
 
-  .footer__content {
+  .footer-content {
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
   }
@@ -646,7 +646,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
   }
-  .footer__copy {
+  .footer-copy {
     order: -1;
   }
 }
@@ -735,16 +735,16 @@ img {
   .footer {
     padding-block: 5rem 3rem;
   }
-  .footer__title {
+  .footer-title {
     margin-bottom: 1.5rem;
   }
   .footer-group {
     margin-top: 7rem;
   }
-  .footer__social {
+  .footer-social {
     column-gap: 2rem;
   }
-  .footer__social-link {
+  .footer-social-link {
     font-size: 1.5rem;
   }
   .scrollup {

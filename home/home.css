@@ -306,10 +306,6 @@ img {
   font-weight: initial;
 }
 
-.button:hover i {
-  transform: translateX(0.25rem);
-}
-
 .button {
   border-radius: 18px;
   height: auto;
@@ -321,13 +317,12 @@ img {
 /*=============== POPULAR ===============*/
 .popular__container {
   display: grid;
-  grid-template-columns: repeat(7, 300px);
+  grid-template-columns: repeat(3, 300px);
   column-gap: 9rem;
   padding-top: 1.5rem;
   justify-content: flex-start;
   row-gap: 2.5rem;
-  overflow-x: auto;
-  white-space: nowrap;
+  /* overflow-x: auto; */
   padding-bottom: 1rem;
 }
 
@@ -346,7 +341,7 @@ img {
 
 .popular__image {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-bottom: 1rem;
 }
 
@@ -400,7 +395,6 @@ img {
 
 .explore__image {
   position: absolute;
-  overflow: hidden;
 }
 
 .explore__img {
@@ -491,7 +485,7 @@ img {
 }
 
 .footer-data {
-  grid-template-columns: repeat(5, max-content);
+  grid-template-columns: repeat(3, max-content);
   gap: 2.5rem 3.5rem;
 }
 
@@ -623,13 +617,13 @@ img {
 }
 
 .popular__container {
-  grid-template-columns: repeat(5, 240px);
+  grid-template-columns: repeat(3, 240px);
   column-gap: 3rem;
 }
 
 @media screen and (min-width: 768px) {
   .popular__container {
-    grid-template-columns: repeat(5, 240px);
+    grid-template-columns: repeat(3, 240px);
     column-gap: 3rem;
   }
 
@@ -663,7 +657,7 @@ img {
   }
 
   .popular__container {
-    grid-template-columns: repeat(7, 240px);
+    grid-template-columns: repeat(3, 240px);
   }
 
   .footer-data {
@@ -709,7 +703,7 @@ img {
   }
   
   .popular__container {
-    grid-template-columns: repeat(5, 300px);
+    grid-template-columns: repeat(3, 300px);
     column-gap: 3rem;
     padding-top: 4rem;
   }
